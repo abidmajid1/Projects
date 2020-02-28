@@ -1,0 +1,17 @@
+﻿@model ZooSimulator.ViewModel.AnimalViewModel
+@{
+    ViewBag.Title = "AnimalView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<ul>
+    @foreach (var animals in Model.Animal)
+    {
+        <li>@animals.Name</li>
+        <li>@animals.Health</li>
+        
+    }
+</ul>
+
+<form id="healthUpdate">
+    
+</form>
